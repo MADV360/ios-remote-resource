@@ -6,9 +6,9 @@ import random
 import string
 
 def fail_and_exit(message):
-    print "Error: "+message
-    print "package plugin failed!"
-    print "cleaning..."
+    print( "Error: "+message)
+    print( "package plugin failed!")
+    print( "cleaning...")
     os.system("rm -rf ./temp_plugin_dir")
     os.system("rm -rf ./tmp.md5")
     os.system("rm -rf ./tmp_signed")
@@ -92,7 +92,7 @@ os.system("rm -rf key")
 # if (r!=0):
 #     fail_and_exit("Openssl rsautl -encrypt failed!")
 
-print "Packaging..."
+print( "Packaging...")
 os.system("rm -rf ./tmp_signed")
 os.system("mkdir tmp_signed")
 
@@ -112,8 +112,8 @@ r = os.system("rm -rf temp_plugin_dir")
 md5 = os.popen("md5 " + "./tmp_signed/"+pluginName+".zip").read()
 md5 = md5[-33:-1]
 
-print "Signing..."
-print "Package MD5: " + md5
+print( "Signing...")
+print( "Package MD5: " + md5)
 
 r = os.system("echo "+md5+" > tmp.md5")
 if (r!=0):
@@ -137,4 +137,4 @@ if (r!=0):
 
 r = os.system("rm -rf tmp_signed")
 
-print "package plugin finished!"
+print( "package plugin finished!")
