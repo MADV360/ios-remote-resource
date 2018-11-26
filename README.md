@@ -118,6 +118,8 @@
 
    ```shell
    python packagePluginAndSign plugin_name /path/to/private.pem /path/to/public.cer yourDeveloperId
+   python packagePluginAndSign com.madv.dlowl.iosr private.pem public.cer 945176473 
+
    ```
 
    其中 plugin_name 是插件包的目录名，private.pem 和 public.cer 分别是准备好的私钥和公钥文件，yourDeveloperId 是开发此插件的米家开发者账号（数字小米ID）
