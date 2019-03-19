@@ -1,0 +1,9 @@
+{
+  "package_name":"com.madv.miowl.iosr",
+  "developer_id":"945176473",
+  "models":"madv.cateye.miowl",
+  "version":"5",
+  "min_api_level":"1",
+  "asset_level":"5",
+  "platform":"iphone"
+}
