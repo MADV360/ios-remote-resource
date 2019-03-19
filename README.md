@@ -1,3 +1,9 @@
+### Qiu Dong:
+通过集成好的Shell脚本对处理过程作了简化：
+  - 生成证书文件(keystore没变，可以跳过此步骤)：只要将keystore文件拷到本目录，执行如下Shell命令即可: ./genKeyPairsFromKeystore.sh {keystore文件名} {keystore别名}
+  - 插件资源打包：按照本文档的具体说明修改com.madv.miowl.iosr文件夹下的相关内容，然后执行./packAndSign4MIOWL.sh 即可
+-----------------------------------
+
 ### 说明
 
 资源包插件（MiHomeResoucePlugin）是为米家 iOS 合作开发（原生语言嵌入开发）的厂商推出地插件系统，旨在分离代码与资源文件，提供资源热更新功能，同时为米家 App 瘦身，减小用户下载量。
